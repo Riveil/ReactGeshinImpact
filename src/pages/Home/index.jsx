@@ -11,7 +11,7 @@ import Logo from '../../assets/logo.png';
 import Baal from '../../assets/baal.png';
 import Enemy from '../../assets/enemy.png';
 import Element from '../../assets/element.png';
-
+import './style.css';
 import { Header } from "../../components";
 
 export default function Home() {
@@ -65,12 +65,21 @@ export default function Home() {
   return (
     <>
       {/* Header */}
-      <Header>
+        <Header>
+        <div class="logo-container animate__animated animate__bounceIn">
+          <img src={Logo} class="logo-image" />
+        </div>
+        <div class="button-container">
+          <a href="https://autopatchhk.yuanshen.com/client_app/download/launcher/20230216150617_fwQwPofKd7bZ7nRG/GenshinImpact_install_20230215193328.exe" class="button primary-button">
+            Download PC Version
+          </a>
+          <a href="https://genshin.hoyoverse.com/id/" class="button secondary-button" target="_blank">
+            Official Page
+          </a>
+        </div>
+      </Header>
+      {/* <Header>
         <img src={Logo} style={{height :400, width: 1000}}/>
-        <p className="lead text-white-50 mb-4">
-          Quickly design and customize responsive mobile-first sites with
-          Bootstrap, the world's most popular front-end open source toolkit!
-        </p>
         <div className="d-grid gap-3 d-sm-flex justify-content-sm-center">
           <Button
             variant="outline-light"
@@ -88,7 +97,7 @@ export default function Home() {
             Official Page
           </Button>
         </div>
-      </Header>
+      </Header> */}
 
       {/* Section */}
       <section className="py-5 border-bottom" id="features">

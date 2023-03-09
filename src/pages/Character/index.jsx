@@ -1,18 +1,7 @@
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
-import {
-  BsArrowRight,
-  BsBuilding,
-  BsCollection,
-  BsToggles2,
-} from "react-icons/bs";
-import Logo from '../../assets/logo.png';
-import Baal from '../../assets/baal.png';
-import Enemy from '../../assets/enemy.png';
-import Element from '../../assets/element.png';
-
-import { Header } from "../../components";
 
 export default function Home() {
   const [data, setData] = useState([]);
