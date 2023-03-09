@@ -14,7 +14,7 @@ export default function Navigation() {
   const navigate = useNavigate();
   return (
     <>
-      <Navbar key="md" bg="dark" variant="dark" expand="md" sticky="top" >
+      <Navbar key="md" bg="transparent" variant="light" expand="md" fixed="top" >
         <Container>
           <Navbar.Brand href="/home"><b>Genshin Impact</b></Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
@@ -30,7 +30,7 @@ export default function Navigation() {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link href="/home">Home</Nav.Link>
-                <Nav.Link href="/karakter">Characters</Nav.Link>
+                <Nav.Link href="/character">Characters</Nav.Link>
                 <Nav.Link href="/about">About</Nav.Link>
                 
               </Nav>

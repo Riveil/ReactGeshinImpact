@@ -1,16 +1,13 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import './style.css';
 
 export default function Header({ children }) {
   return (
     <>
-      <header className="bg-dark py-5">
-        <Container className="px-5">
-          <Row className="gx-5 justify-content-center">
-            <Col lg={6}>
-              <div className="text-center my-5">{children}</div>
-            </Col>
-          </Row>
+      <header className="bg-banner">
+        <Container className="text-banner">
+            {children}
         </Container>
       </header>
     </>
